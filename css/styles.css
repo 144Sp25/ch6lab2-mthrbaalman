@@ -1,6 +1,6 @@
 /*
-Author: Maria Cruz
-Date: Current Date
+Author: Matt Baalman
+Date: 03/18/25
 File Name: styles.css
 */
 
@@ -139,4 +139,44 @@ footer {
 footer a {
     color: #f6eee4;
     text-decoration: none;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 620px), print {
+    
+    /*Tablet Viewport: Show tab-desk class, hide mobile class*/
+    .tablet-desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    /*Tablet viewport: style rules nav area*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em
+    }
+    
+    nav li a {
+        padding: 0.5em;
+    }
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1000px), print {
+    
+    /*Desktop Viewport: Style rules for nav area*/
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    nav li a {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em; /*pick up here*/
+    }
 }
